@@ -78,7 +78,7 @@ O workflow completo está disponível em `.github/workflows/docker-allure.yml`.
 ## 🌐 Relatório Allure Online
 
 O relatório Allure mais recente pode ser acessado no GitHub Pages:
-🔗 [Relatório Allure - Petstore API Automation]()
+🔗 [Relatório Allure - Petstore API Automation](https://github.com/phillipe77/Petstore-API-Automation/deployments/github-pages)
 
 ## 📜 Licença
 
