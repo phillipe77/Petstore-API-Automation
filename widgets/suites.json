@@ -1,1 +1,1 @@
-{"total":0,"items":[]}
+{"total":3,"items":[{"uid":"a76c3c86a2bc99fa18430c96666954a3","name":"tests.PetSearchTests","statistic":{"failed":0,"broken":0,"skipped":0,"passed":2,"unknown":0,"total":2}},{"uid":"35140bc34100c28b5be9ff3a7aa78b26","name":"tests.PetOrderCreationTests","statistic":{"failed":0,"broken":0,"skipped":0,"passed":1,"unknown":0,"total":1}},{"uid":"f0ceed94e108d424fd13c1dc7a421f1f","name":"tests.PetUpdateTests","statistic":{"failed":0,"broken":0,"skipped":0,"passed":1,"unknown":0,"total":1}}]}
