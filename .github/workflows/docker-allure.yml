@@ -38,7 +38,7 @@ jobs:
             maven-allure-tests
 
       - name: List Allure Results
-        run: ls -la allure-results  # Confirme que o diretório existe e contém arquivos
+        run: ls -la allure-results
 
       - name: Install Allure
         run: |
@@ -50,7 +50,7 @@ jobs:
           allure --version
 
       - name: Generate Allure Report
-        run: allure generate allure-results --clean -o allure-report  # Usando allure-results diretamente
+        run: allure generate allure-results --clean -o allure-report
 
       - name: Upload Allure Report as artifact
         uses: actions/upload-artifact@v2
