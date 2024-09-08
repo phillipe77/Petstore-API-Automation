@@ -73,5 +73,6 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         if: success()
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          personal_token: ${{ secrets.GH_TOKEN }}
           publish_dir: allure-report
+
