@@ -5,11 +5,12 @@ WORKDIR /app
 COPY . .
 
 # Instalar Allure
-RUN apt-get update && apt-get install -y wget unzip \
+RUN apk update && apk add --no-cache wget unzip \
     && wget https://github.com/allure-framework/allure2/releases/download/2.30.0/allure-2.30.0.zip \
     && unzip allure-2.30.0.zip -d /opt \
     && ln -s /opt/allure-2.30.0/bin/allure /usr/local/bin/allure \
     && rm allure-2.30.0.zip
+
 
 # Baixar dependências do Maven
 RUN mvn dependency:go-offline
