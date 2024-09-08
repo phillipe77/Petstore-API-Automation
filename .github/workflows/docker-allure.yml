@@ -30,8 +30,16 @@ jobs:
       - name: Build Docker image
         run: docker build -t maven-allure-tests .
 
+      - name: Create and set permissions for target directory
+        run: |
+          mkdir -p target
+          chmod 777 target
+
       - name: Run tests in Docker container
-        run: docker run --rm -v ${{ github.workspace }}/target:/app/target maven-allure-tests
+        run: |
+          docker run --rm \
+            -v ${{ github.workspace }}/target:/app/target \
+            maven-allure-tests
 
       - name: Install Allure
         run: |
