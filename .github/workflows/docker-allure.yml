@@ -33,8 +33,27 @@ jobs:
       - name: Run tests in Docker container
         run: docker run --rm -v ${{ github.workspace }}/target:/app/target maven-allure-tests
 
+      - name: Install Allure
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y wget unzip
+          wget https://github.com/allure-framework/allure2/releases/download/2.30.0/allure-2.30.0.zip
+          sudo unzip allure-2.30.0.zip -d /opt
+          sudo ln -s /opt/allure-2.30.0/bin/allure /usr/local/bin/allure
+          allure --version
+
+      - name: Generate Allure Report
+        run: allure generate target/allure-results --clean -o allure-report
+
       - name: Upload Allure Report as artifact
         uses: actions/upload-artifact@v2
         with:
           name: allure-report
-          path: target/allure-report
+          path: allure-report
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        if: success()
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: allure-report
