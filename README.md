@@ -4,14 +4,14 @@ Projeto de testes automatizados para a API Petstore, desenvolvida em Java com as
 
 ## 🧪 Testes
 
-Os testes cobrem diferentes cenários da Petstore API, validando suas principais funcionalidades:
+Os testes incluem: 
 
 * **Criação de Pedidos (Order Creation):** Verifica a criação de novos pedidos de pets, garantindo que os campos obrigatórios (ID, quantidade, status) sejam fornecidos corretamente.
 * **Atualização de Pets (Pet Update):** Valida a atualização de informações de pets, como nome, status e URLs de fotos, garantindo a consistência dos dados.
 * **Consulta de Pets por ID Inexistente (Non-existent Pet Search):** Avalia o comportamento da API ao buscar um pet inexistente, retornando o erro esperado (404).
 * **Consulta de Pets por Status (Pet Status Search):** Valida a busca de pets por status (disponível, pendente, vendido), assegurando que a API retorne os pets corretos.
 
-Os cenários cobrem fluxos principais e tratam tanto de casos de sucesso quanto de erro.
+
 
 ## 🏛️ Arquitetura de Testes
 
@@ -78,7 +78,7 @@ O workflow completo está disponível em `.github/workflows/docker-allure.yml`.
 ## 🌐 Relatório Allure Online
 
 O relatório Allure mais recente pode ser acessado no GitHub Pages:
-🔗 [Relatório Allure - Petstore API Automation]()
+🔗 [Relatório Allure - Petstore API Automation](https://github.com/phillipe77/Petstore-API-Automation/deployments/github-pages)
 
 ## 📜 Licença
 
