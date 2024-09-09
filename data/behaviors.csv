@@ -1,5 +1,5 @@
 "BROKEN","EPIC","FAILED","FEATURE","PASSED","SKIPPED","STORY","UNKNOWN"
 "0","Pet Store","0","Pet Search","1","0","Busca por pets com status pendente","0"
-"0","Pet Store","0","Pet Order Creation","1","0","Criar um novo pedido de pet","0"
 "0","Pet Store","0","Pet Update","1","0","Atualizar informações de um pet","0"
 "0","Pet Store","0","Pet Search","1","0","Busca por pet inexistente","0"
+"0","Pet Store","0","Pet Order Creation","1","0","Criar um novo pedido de pet","0"
